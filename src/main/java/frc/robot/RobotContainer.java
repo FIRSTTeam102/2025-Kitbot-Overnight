@@ -9,7 +9,6 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 import frc.robot.Constants.OperatorConstants;
-import frc.robot.Constants.RollerConstants;
 import frc.robot.commands.Autos;
 import frc.robot.commands.SpinRollers;
 import frc.robot.subsystems.CANDriveSubsystem;
@@ -28,6 +27,8 @@ public class RobotContainer {
   // The robot's subsystems
   private final CANDriveSubsystem driveSubsystem = new CANDriveSubsystem();
   private final CANRollerSubsystem rollerSubsystem = new CANRollerSubsystem();
+ 
+
 
   // The driver's controller
   private final CommandXboxController driverController = new CommandXboxController(
